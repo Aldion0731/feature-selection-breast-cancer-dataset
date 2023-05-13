@@ -2,10 +2,11 @@
 
 Breast cancer is a serious and often life-threatening disease that affects millions of people worldwide. Early detection and accurate diagnosis are crucial for successful treatment, making it important to identify the most informative features for predicting the type of breast cancer tumor. This project is a feature selection analysis of the Breast Cancer dataset, which aims to demonstrate the impact of different feature selection techniques on the accuracy of a RandomForestClassifier trained on the dataset.
 
+___
 ### Dataset
 The Breast Cancer dataset used in this project is available in the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(diagnostic)). It contains information about 569 breast cancer tumors described by 30 features such as radius, texture, and perimeter of each tumor. The target variable indicates whether the tumor is malignant or benign.
 
-
+___
 ### Feature Selection Techniques
 The following feature selection techniques are implemented in this project:
 
@@ -15,8 +16,9 @@ The following feature selection techniques are implemented in this project:
 
 **Wrapper-based Feature Selection**: Methods that evaluate subsets of features using a machine learning algorithm and selects the best subset based on performance.
 
-**Embedded Feature Selection**: Methods that use a machine learning algorithm's intrinsic feature selection. An example of this is L1 regression.
+**Embedded Feature Selection**: Methods that use a machine learning algorithm's intrinsic feature selection. An example of this is L1 regularization.
 
+___
 ### Usage
 
 To use this project, 
@@ -35,11 +37,12 @@ pipenv sync
 
 - Finally, navigate to `src/notebooks/feature_selection.ipynb` and run the code in the notebook.
 
-
+___
 ### Results
 
 ![Results](/results/results.PNG)
 
+___
 ### Conclusion
 
 The results of this project demonstrate that not only are feature selection techniques useful for reducing resource requirements and model complexity, but if properly done can also improve model accuracy by finding the best subset of features for predicting the target variable. Whereas we did not see significant improvements in recall, the fact that we were able to see improvements in metrics with less complex models presents a compelling case for feature selection methods.
